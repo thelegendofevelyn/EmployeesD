@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFF1F107">
-        <TextBox Name ="Assets"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="399" Margin="180,10,0,0" Width="189" Background="White" Text="Assets Text" TextChanged="Assets_TextChanged">
+        <TextBox Name ="Assets"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="399" Margin="180,10,0,0" Width="189" Background="White" Text="Assets Text">
         </TextBox>
-        <TextBox Name ="Employees"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="399" Margin="398,10,0,0" Width="188" Background="White" Text="Employees Text" TextChanged="Assets_TextChanged">
+        <TextBox Name ="Employees"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="399" Margin="398,10,0,0" Width="188" Background="White" Text="Employees Text">
         </TextBox>
         <Button Content="See Assets" Margin="10,54,692,336" Click="Assets_Click"/>
         <Button Content="See Employees" Margin="10,88,692,302" Click="Employees_Click"/>

@@ -35,11 +35,16 @@ namespace EmployeesD
             cn.Open();
             OleDbDataReader read = cmd.ExecuteReader();
             string data = "";
+            string data1 = "";
+            string data2 = "";
             while (read.Read())
             {
-                data += read[0].ToString() + "\n";
+                    data += read[0].ToString() + "\n";
+                    data1 += read[1].ToString() + "\n";
+                    data2 += read[2].ToString() + "\n";
             }
-            Assets.Text = data;
+                Assets.Text = data + data1 + data2;
+            
             cn.Close();
         }
 
@@ -49,18 +54,15 @@ namespace EmployeesD
             OleDbCommand cmd = new OleDbCommand(query, cn);
             cn.Open();
             OleDbDataReader read = cmd.ExecuteReader();
-            string data = "";
+            string data1 = "";
+            string data2 = "";
             while (read.Read())
             {
-                data += read[0].ToString() + "\n";
+                data1 += read[0].ToString() + "\n";
+                data2 += read[1].ToString() + "\n";
             }
-            Employees.Text = data;
+            Employees.Text = data1 + data2;
             cn.Close();
-        }
-
-        private void Assets_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //TextBox.Text = data;
         }
     }
 }
