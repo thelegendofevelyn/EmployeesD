@@ -56,7 +56,7 @@ namespace EmployeesD
 
         private void Assets_TextChanged(object sender, TextChangedEventArgs e)
         {
-            
+            //TextBox.Text = data;
         }
     }
 }
