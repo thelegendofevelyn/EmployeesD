@@ -35,15 +35,13 @@ namespace EmployeesD
             cn.Open();
             OleDbDataReader read = cmd.ExecuteReader();
             string data = "";
-            string data1 = "";
-            string data2 = "";
             while (read.Read())
             {
                     data += read[0].ToString() + "\n";
-                    data1 += read[1].ToString() + "\n";
-                    data2 += read[2].ToString() + "\n";
+                    data += read[1].ToString() + "\n";
+                    data += read[2].ToString() + "\n";
             }
-            Assets.Text = data + data1 + data2;
+            Assets.Text = data;
             
             cn.Close();
         }
@@ -55,15 +53,13 @@ namespace EmployeesD
             cn.Open();
             OleDbDataReader read = cmd.ExecuteReader();
             string data = "";
-            string data1 = "";
-            string data2 = "";
             while (read.Read())
             {
                 data += read[0].ToString() + "\n";
-                data1 += read[1].ToString() + "\n";
-                data2 += read[2].ToString() + "\n";
+                data += read[1].ToString() + "\n";
+                data += read[2].ToString() + "\n";
             }
-            Employees.Text = data + data1 + data2;
+            Employees.Text = data;
    
             cn.Close();
         }
