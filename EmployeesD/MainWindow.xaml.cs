@@ -24,7 +24,7 @@ namespace EmployeesD
         OleDbConnection cn;
         public MainWindow()
         {
-            cn = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source =| DataDirectory |\Employees1.accdb");
+            cn = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source =|DataDirectory|\Employees1.accdb");
             InitializeComponent();
         }
 
@@ -39,6 +39,8 @@ namespace EmployeesD
             {
                 data += read[0].ToString() + "\n";
             }
+            Assets.Text = data;
+            cn.Close();
         }
 
         private void Employees_Click(object sender, RoutedEventArgs e)
@@ -52,6 +54,8 @@ namespace EmployeesD
             {
                 data += read[0].ToString() + "\n";
             }
+            Employees.Text = data;
+            cn.Close();
         }
 
         private void Assets_TextChanged(object sender, TextChangedEventArgs e)
