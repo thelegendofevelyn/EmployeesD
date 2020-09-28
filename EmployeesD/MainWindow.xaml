@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:EmployeesD"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FFF1F107">
+        <TextBox Name ="Assets"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="399" Margin="180,10,0,0" Width="189" Background="White" Text="text isthis" TextChanged="Assets_TextChanged">
+        </TextBox>
+        <Button Content="See Assets" Margin="10,54,692,336" Click="Assets_Click"/>
+        <Button Content="See Employees" Margin="10,88,692,302" Click="Employees_Click"/>
     </Grid>
 </Window>
